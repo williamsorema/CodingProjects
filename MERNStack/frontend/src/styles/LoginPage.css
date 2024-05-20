@@ -1,0 +1,18 @@
+
+#LoginPage {
+    overflow-x: hidden;
+    overflow-y: auto;
+    height: 100vh;
+}
+
+
+.BackgroundVideo {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    z-index: -1;
+}

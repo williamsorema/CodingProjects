@@ -1,0 +1,9 @@
+#ProgressContainer {
+    border: 1px;
+    border-style: solid;
+    border-color: black;
+}
+
+#ProgressBar {
+    background-color: red;
+}

@@ -1,0 +1,140 @@
+.aboutUsBody {
+    position: flex;
+    height: auto;
+    display: grid;
+    margin-top: 1%;
+    padding-top: 3%;
+    gap: 1rem; 
+    overflow: hidden;
+    grid-template-rows: auto auto; /* Make rows more flexible */
+    grid-template-columns: repeat(4, 1fr);
+    animation: fadeIn 3s ease;
+}
+.aboutUsBody> div{
+    font-family: 'Bebas', serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 15vw; 
+    font-size: 20px;
+}
+
+.aboutUsBody p {
+    font-size: 13px;
+    margin: 0;
+}
+.circleImage {
+    width: 17vh;
+    height: auto;
+    border-radius: 50%;
+    padding: 3px;
+    background-color: black;
+    margin-bottom: 2vh;
+}
+p {
+    font-family: 'sweet-sans', serif;
+    color: black;
+    font-size: 15px;
+    margin: 0;
+    padding: 0;
+    letter-spacing: 0;
+}
+.title{
+   display: flex;
+   flex-direction: column;
+   animation: fadeIn 1s ease;
+}
+.intro{
+    font-family: 'sweet-sans', serif;
+    color: black;
+    font-size: 2vh;
+    letter-spacing: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 60%;
+}
+@media screen and (min-device-width: 1024px) and (max-device-width: 1439px) { 
+    .circleImage {
+        width: 15vh;
+    }
+    .intro p{
+        font-size: 14px;
+    }
+    .intro {
+        width: 80%; 
+    }
+    .title{
+     	margin-top: 30px;
+     }
+}
+@media screen and (min-device-width: 767px) and (max-device-width: 1024px) and (min-device-height: 1024px){ 
+    .circleImage {
+        width: 10vh;
+    }
+    .aboutUsBody p {
+        font-size: 12px;
+    }
+    .aboutUsBody {
+        grid-template-columns: repeat(2, 1fr);
+        margin-top: 1px; 
+        height: 75vh;
+    }
+    .aboutUsBody > div{
+        height: 170px; 
+    }
+    .intro p{
+        font-size: 14px;
+    }
+    .intro {
+        width: 80%; 
+    }
+    .title{
+     	margin-top: 30px;
+     }
+}
+@media screen and (max-device-width: 767px) {
+    .circleImage {
+        width: 10vh;
+    }
+    .aboutUsBody p {
+        font-size: 10px;
+    }
+    .aboutUsBody {
+        grid-template-columns: repeat(2, 1fr);
+        margin-top: 1px; 
+        height: 75vh;
+    }
+    .aboutUsBody > div{
+        height: 16.75vh; 
+        font-size: 2vh;
+    }
+    .intro p{
+        font-size: 1.2vh;
+    }
+
+    .intro {
+        width: 80%; 
+    }
+    .title{
+     	margin-top: 30px;
+     }
+}
+@media screen and (max-device-width: 375px) {
+    .aboutUsBody p {
+        font-size: 5px;
+    }
+    .aboutUsBody {
+        grid-template-columns: repeat(3, 1fr);
+        height: 70vh;
+    }
+    .aboutUsBody > div{
+        height: 20vh;
+        font-size: 12px; 	
+    }
+    .intro p{
+        font-size: 9px;
+    }
+}

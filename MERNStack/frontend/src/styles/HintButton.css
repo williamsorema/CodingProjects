@@ -1,0 +1,8 @@
+/*The btn-custom class is in the QuestionPage.css file!*/
+
+#HintButton {
+    font-family: 'LexendExa';
+    border: 2px;
+    border-style: solid;
+    border-color: red;
+}

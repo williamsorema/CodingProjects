@@ -1,0 +1,76 @@
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+#LoginPage{
+    animation: fadeIn 2s ease;
+}
+.BackgroundVideo {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    z-index: -1;
+}
+#LoginPage {
+    height: 100vh;
+}
+.top{
+    display: none;
+}
+#mobileSensei{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 35vh;
+    width: auto;
+    margin-top: 10%;
+}
+@media screen and (max-device-width: 1024px) and (min-device-height: 1024px){
+    .parent{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 0.5fr;
+        grid-column-gap: 0px;
+        grid-row-gap: 0px;
+    }    
+    .top { 
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        grid-area: 1 / 1 / 2 / 2; 
+       
+    }
+    .bottom { 
+        grid-area: 2 / 1 / 3 / 2; 
+    }
+}
+@media screen and (max-device-width: 767px) and (max-device-height: 1023px){
+    .parent{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 0.5fr 0.5fr;
+        grid-column-gap: 0px;
+        grid-row-gap: 0px;
+    }
+    .top { 
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        grid-area: 1 / 1 / 2 / 2; 
+       
+    }
+    .bottom { 
+        grid-area: 2 / 1 / 3 / 2; 
+    }       
+    #mobileSensei{
+        height: 20vh;
+    }
+}

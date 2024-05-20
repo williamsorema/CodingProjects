@@ -1,0 +1,71 @@
+.wrapper {
+  width: 420px;
+  background-color: transparent;
+  border: 2px solid lightgrey;
+  color: black;
+  border-radius: 10px;
+  padding: 30px 40px;
+  backdrop-filter: blur(30px);
+  box-shadow: 0 0 10px lightgrey; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  overflow: hidden;
+}
+
+#AnnouncementBoxParent {
+  width: auto;
+  max-width: 50%;
+  min-width: 100px;
+  background-color: transparent;
+  border: 2px solid lightgrey;
+  color: black;
+  border-radius: 10px;
+  padding: 30px 40px;
+  backdrop-filter: blur(30px);
+  box-shadow: 0 0 10px lightgrey; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  overflow: hidden;
+}
+.error {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.65vh;
+  width: 250px;
+  color: red;
+}
+
+h1 {
+  text-align: center;
+}
+
+#ContinueButton {
+  background-color: #fa304c;
+  color: white;
+  border-color: #fa304c;
+  border-radius: 1%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 45px;
+  margin-bottom: 15px;
+  font-size: 21px;
+  font-family: 'sweet-sans';
+  max-width: 400px;
+  min-width: 200px;
+  width: 40%;
+  height: 40px;
+  padding-top: 2px;
+  padding-bottom: 2px;
+  transition: background-color .5s ease;
+  filter: drop-shadow(2px 1px 10px black);
+}
+
+#ContinueButton:hover{
+  background-color: white;
+  color: #fa304c;
+}

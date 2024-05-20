@@ -1,0 +1,146 @@
+/*Button animation.*/
+@keyframes ButtonFill {
+
+    0% {
+        background-image: linear-gradient(135deg, white 100%, var(--button-color, #fa304c) 0%);
+    }
+
+    10% {
+        background-image: linear-gradient(135deg, white 0%, white 90%, var(--button-color, #fa304c) 90%, var(--button-color, #fa304c) 100%);
+    }
+
+    20% {
+        background-image: linear-gradient(135deg, white 0%, white 80%, var(--button-color, #fa304c) 80%, var(--button-color, #fa304c)100%);
+    }
+
+    30% {
+        background-image: linear-gradient(135deg, white 0%, white 70%, var(--button-color, #fa304c) 70%, var(--button-color, #fa304c) 100%);
+    }
+
+    40% {
+        background-image: linear-gradient(135deg, white 0%, white 60%, var(--button-color, #fa304c) 40%, var(--button-color, #fa304c) 100%);
+    }
+
+    50% {
+        background-image: linear-gradient(135deg, white 0%, white 50%, var(--button-color, #fa304c) 50%, var(--button-color, #fa304c) 100%);
+    }
+
+    60% {
+        background-image: linear-gradient(135deg, white 0%, white 40%, var(--button-color, #fa304c) 40%, var(--button-color, #fa304c) 100%);
+    }
+
+    70% {
+        background-image: linear-gradient(135deg, white 0%, white 30%, var(--button-color, #fa304c) 30%, var(--button-color, #fa304c) 100%);
+    }
+
+    80% {
+        background-image: linear-gradient(135deg, white 0%, white 20%, var(--button-color, #fa304c) 20%, var(--button-color, #fa304c) 100%);
+    }
+
+    90% {
+        background-image: linear-gradient(135deg, white 0%, white 10%, var(--button-color, #fa304c) 10%, var(--button-color, #fa304c) 100%);
+    }
+
+    100% {
+        background-image: linear-gradient(135deg, var(--button-color, #fa304c) 100%);
+    }
+}
+
+#QuestionPageElement {
+    height: 100vh;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+.btn-custom {
+    padding: 1em 1.5em;
+    border-radius: 7px;
+    border-color: #fa304c; 
+    border-width: 0.5px; 
+    background-color: white; 
+    color: #fa304c;
+    font-family: 'sweet-sans';
+    width: auto; 
+    box-sizing: border-box; 
+    display: inline-block;
+}
+.btn-custom-alt {
+    padding: 1em 1.5em;
+    border-radius: 7px;
+    border-color: #fa304c; 
+    border-width: 0.5px; 
+    background-color: white; 
+    color: #fa304c;
+    font-family: 'sweet-sans';
+    width: auto; 
+    box-sizing: border-box; 
+    display: inline-block;
+}
+.btn-custom:hover { 
+    animation: ButtonFill 0.17s linear 1 forwards;
+    background-color: var(--button-color, #fa304c);
+    color: white;
+}
+
+#ReturnHomeButton {
+    margin-right: 5%;
+}
+#QuestionText {
+    color: black;
+    font-family: 'Bebas';
+}
+#ButtonRow {
+    background-color: rgba(255, 255, 255, 0.055);
+    border-style: none;
+}
+#QuestionRow {
+    background-color: rgba(255, 255, 255, 0.055);
+    box-shadow: 10px 15px 50px #000000;
+    border-radius: 1px;
+    border-style: solid;
+    border-color: lightgrey;
+    border-width: 0.5px;
+}
+.placeholder {
+    height: 50px;
+}
+.bubble {
+    font-family: 'sweet-sans';
+    margin: 3% auto 1.5% auto;
+    width: 30vh;
+    padding: 15px 0 15px 0;
+    font-size: 2vh;
+    position: relative;
+    background: black;
+    color: white;
+    border-radius: 7px;
+    text-align: center;
+}
+.bubble:after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 0;
+    height: 0;
+    border: 20px solid transparent;
+    border-top-color: black;
+    border-bottom: 0;
+    margin-left: -20px;
+    margin-bottom: -20px;
+}
+.btnColor {
+    border-color: black;
+    color: black;
+    --button-color: black;
+}
+.sensei{
+    height: 200px;
+
+}
+.answers{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
+}

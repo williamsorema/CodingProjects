@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+	<title>COP 4331 LAMP Stack Project</title>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE-edge">
+	<meta name= "viewport" content= "width-device-width, initial-scale-1.0">
+	<script type="text/javascript" src="js/md5.js"></script>
+	<script type="text/javascript" src="js/code.js"></script>
+    <link href="css/styles.css" rel="stylesheet">	
+	<link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
+</head>
+
+<body>
+	<div class= "container-index">
+		<video autoplay loop muted class= "background-video">
+			<source src= "images/OCEAN LOOP.mp4" type="video/mp4">
+		</video>
+
+		<img src="images/square.PNG" class= "centered-square">
+
+		<div class= "content">
+			<h2>THE</h2>
+			<h1>REEF</h1>
+		</div>
+		
+		<div id="directoryDiv">
+			<button class="buttons" onclick="openLoginBox()">LOGIN</button><br>
+			<button class="buttons" onclick="openSignUpBox()">SIGN UP</button><br>
+			<button class="buttons2" onclick="goToGitHub()">GIT HUB</button><br>
+		</div>
+	</div>
+
+	<div class="account-popup" id="loginPopUp">
+	  <div class="popup-container">
+		    <h1>Login</h1>
+
+		    <input id="loginName" type="text" placeholder="Enter Username" required>
+		    <input id="loginPassword" type="password" placeholder="Enter Password" name="psw" required>
+		  
+		  	<p id="loginResult"></p>
+		  
+		    <div class ="sign-or-login">
+		    	<p>Don't have an account yet?</p>
+		    	<button type= "button" class= "buttons2" onclick="openSignUpBox()">Sign Up</button>
+		    </div>
+
+		    <button type= "submit" class="btn" onclick="doLogin()">LOGIN</button>
+		    <button type= "button" class= "btn cancel" onclick="closeLoginBox()">CLOSE</button>
+
+	  </div>
+	</div>
+
+	<div class="account-popup" id="signUpPopUp">
+	  <div class="popup-container">
+		    <h1>Sign Up</h1>
+
+		    <input id= "newFirstName" type="text" placeholder="First Name" name="firstName" oninput="toggleSignUpMessages()">
+		    <input id= "newLastName" type="text" placeholder="Last Name" name ="lastName" oninput="toggleSignUpMessages()">
+		    <input id= "newUsername" type="text" placeholder="Enter Username" name="username" oninput="toggleSignUpMessages()">
+		    <input type="password" placeholder="Enter Password" name="psw" id= "psw" oninput="toggleSignUpMessages()">
+		    <input type="password" placeholder="Confirm Password" name="repsw" id= "repsw" oninput="toggleSignUpMessages()">
+
+			<!--For sign up condition messages.-->
+			<div id="firstNameConditionMessage">Please Enter A First Name!</div>
+			<div id="lastNameConditionMessage">Please Enter A Last Name!</div>
+			<div id="userNameConditionMessage">Please Enter A Username!</div>
+			<div id="passwordConditionMessage">Please Enter A Password!</div>
+			<div id="passwordMatchMessage">Passwords Must Match!</div>
+
+		    <div class ="sign-or-login">
+		    	<p>Got an account already?</p>
+		    	<button type= "button" class= "buttons2" onclick="openLoginBox()">Login</button>
+		    </div>
+		
+		    <button type= "submit" class="btn" onclick="checkSignUpConditions()">SIGN UP</button> 
+
+            <span id="userAddResult"></span>
+            <button type= "button" class= "btn cancel" onclick="closeSignUpBox()">CLOSE</button>
+	  </div>
+	</div>
+
+</body>
+
+</html>

@@ -1,0 +1,28 @@
+#DashBoardButton {
+    font-family: 'sweet-sans';
+    font-size: 15px;
+    border-style: none;
+    margin-top: 10%;
+    color: black;
+    background: none;
+    cursor: pointer;
+    position: relative;
+    display: inline-block; /* Ensures the pseudo-element aligns correctly */
+    overflow: hidden; /* Keeps the underline within the button boundaries */
+}
+
+#DashBoardButton::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0%;
+    height: 0.5px; /* Adjust the height of the underline */
+    background-color: black; /* Same as the text color */
+    transition: width 0.3s ease;
+}
+
+#DashBoardButton:hover::after {
+    width: 100%;
+}
+

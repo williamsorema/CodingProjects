@@ -1,0 +1,66 @@
+@keyframes spin{
+    to{
+        transform: rotate(1080deg);
+    }
+}
+@keyframes loading{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 100%;
+    }
+}
+.load {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30vh;
+} 
+#X{
+    animation: spin 3s linear infinite;
+}
+.loadingBar{
+    border-radius: 5px;
+    padding: 1px;
+    margin-top: 2vh;
+    width: 30%;
+    background-color: black;
+    border-color: white;
+    border-style: inset;
+    border-width: 0.02px;
+}
+.loadingBar-inner{
+    height: 20px;
+    border-radius: 3px;
+    background-color: #fa304c;
+    display: flex;
+    align-items: center;
+    align-items: center;
+    justify-content: center;
+    animation: loading 4s forwards cubic-bezier(0,0,0,0);
+}
+.dynamicText{
+    font-family: 'sweet-sans';
+    list-style: none;
+    font-size: 15px;
+    top: 2vh;
+    position: relative;
+}
+.dynamicText :after{
+    content:"";
+    position: absolute;
+    left: 0;
+    height: 60%;
+    width: 100%;
+    background-color: white;
+    border-left: 1px solid #fa304c;
+    animation: typing 1.5s steps(10) infinite;
+}
+@keyframes typing{
+    100%{
+        left: 100%;
+        margin: 0 -35px 0 35px;
+    }
+}

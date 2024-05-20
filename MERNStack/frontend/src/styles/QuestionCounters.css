@@ -1,0 +1,28 @@
+@font-face {
+    font-family: 'LexendExa';
+    src: url(../fonts/LexendExa-VariableFont_wght.ttf) format('truetype');
+}
+
+#CorrectCounter {
+    border-style: solid;
+    border-color: black;
+    border-radius: 7px;
+    font-family: 'bebas';
+    text-align: center;
+    padding: 5px;
+    background-color: black;
+    color: white;
+    font-size: 25px;
+}
+
+#IncorrectCounter {
+    padding: 5px;
+    border-style: solid;
+    border-color: black;
+    border-radius: 7px;
+    font-family: 'bebas';
+    text-align: center;
+    background-color: black;
+    color: white;
+    font-size: 25px;
+}

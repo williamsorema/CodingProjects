@@ -1,0 +1,79 @@
+@font-face {
+    font-family: 'ATF';
+    src: url(../fonts/OPTIRailroadGothic.otf) format('opentype');
+}
+
+#SyntaxTitleElement {
+    font-family: 'ATF';
+    font-weight: 400;
+    font-style: normal;
+    color: black;
+    font-size: 114px;
+    margin-top: 20vh;
+    margin-right: 5%;
+    letter-spacing: 35px;
+}
+
+#SyntaxSubTitleElement {
+    font-family: 'ATF', sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: black;
+    font-size: 33px;
+    margin-right: 3%;
+    letter-spacing: 40px;
+}
+
+#ShurikenImage {
+    margin-right: 0%;
+    width: 1em;
+    height: auto;
+    margin-bottom: 0%;
+}
+
+@media screen and (min-device-width: 1024px) and (max-device-width: 1439px) { 
+    #SyntaxTitleElement{
+    	font-size: 7vw;
+	    letter-spacing: 3vw;
+    }    
+    #SyntaxSubTitleElement{
+    	font-size: 2vw;
+	    letter-spacing: 2.5vw;
+        margin-right: 4.5%;
+    }   
+    #ShurikenImage{
+    	width:7vw;
+    }   
+}
+@media screen and (max-device-width: 1024px) and (min-device-height: 1024px){
+    #SyntaxTitleElement{
+    	font-size: 12vw;
+	letter-spacing: 4vw;
+        margin-right:8vw;
+        margin-top: 0;
+    }    
+    #SyntaxSubTitleElement{
+    	font-size: 4vw;
+	    letter-spacing: 4.2vw;
+	    margin-right: 10%;
+    }
+    #ShurikenImage{
+    	width: 12vw;
+    }      
+}
+@media screen and (max-device-width: 767px) {
+    #SyntaxTitleElement{
+    	font-size: 13vw;
+	letter-spacing: 5vw;
+        margin-right: 7vw;
+        margin-top: 0;
+    }  
+    #SyntaxSubTitleElement{
+    	font-size: 4vw;
+	letter-spacing: 4.2vw;
+	margin-right: 10%;
+    }  
+    #ShurikenImage{
+    	width: 13vw;
+    }       
+}

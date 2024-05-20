@@ -1,0 +1,55 @@
+#GetStartedButtonElement {
+    background-color: #fa304c;
+    color: white;
+    border-color: #fa304c;
+    border-radius: 1%;
+    margin-right: 9vw;
+    margin-top: 45px;
+    margin-bottom: 15px;
+    font-size: 21px;
+    font-family: 'sweet-sans';
+    width: 400px;
+    height: 40px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    transition: background-color .5s ease;
+    filter: drop-shadow(2px 1px 10px black);
+}
+
+#GetStartedButtonElement:hover{
+    background-color: white;
+    color: #fa304c;
+}
+@media screen and (min-device-width: 1024px) and (max-device-width: 1439px) { 
+    #GetStartedButtonElement{
+        font-size: 2.5vh;
+        margin-right: 11vh;
+        width: 38vw;
+        font-size: 2.5vh;
+    }    
+}
+@media screen and (max-device-width: 1024px) and (min-device-height: 1024px) {
+    #GetStartedButtonElement{
+     	margin-right: 1vw;
+     	margin-top: 8vh;
+     	width: 85vw;
+        font-size: 2.5vw;
+        height: 40px;
+    }  
+}
+@media screen and (max-device-width: 767px){
+    #GetStartedButtonElement{
+     	margin-right: 1.5vw;
+     	width: 90vw;
+        font-size: 4vw;
+        height: 30px;
+    }   
+}
+
+@media screen and (max-device-width: 285px) {
+    #GetStartedButtonElement{
+     	width: 87vw;
+        font-size: 4vw;
+        height: 25px;
+    }   
+}
